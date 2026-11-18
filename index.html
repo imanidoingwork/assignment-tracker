@@ -18,6 +18,34 @@
 </head>
 
 <body>
-  <!-- Application features will be added here -->
+    <!-- SCREEN 1: Welcome Screen -->
+  <div id="welcomeScreen" class="screen">
+    <h1>Assignment Tracker</h1>
+    <p>This app was created to help students keep their assignments on track so you don't have to worry about them.</p>
+    <!-- Button to move to the Info Screen -->
+    <button id="toInfoBtn">Next</button>
+  </div>
+
+  <!-- SCREEN 2: Info Screen (hidden at first) -->
+  <div id="infoScreen" class="screen hidden">
+    <h2>Too many assignments? Don't worry, we are here to help!</h2>
+    <p>This will ensure you have a better school experience while working. We help you sort assignments into categories and keep them organized with due dates and classes.</p>
+    <!-- Button to move to the Folders Screen -->
+    <button id="toFoldersBtn">Go to Folders</button>
+  </div>
 </body>
-</html>
+</html><!-- SCREEN 3: Class Folders Screen (hidden at first) -->
+  <div id="foldersScreen" class="screen hidden">
+    <h2>Your Class Folders</h2>
+    <p>Click a class folder to view or add assignments:</p>
+
+    <!-- Grid of clickable class folders -->
+    <div class="folder-grid">
+      <button class="folder-btn" data-subject="Math">Math</button>
+      <button class="folder-btn" data-subject="ELA">ELA</button>
+      <button class="folder-btn" data-subject="Science">Science</button>
+      <button class="folder-btn" data-subject="Spanish">Spanish</button>
+      <button class="folder-btn" data-subject="History">History</button>
+      <button class="folder-btn" data-subject="PE">PE</button>
+    </div>
+  </div>
