@@ -62,4 +62,14 @@ button {
 /* Slightly darkens the folder when hovered over */
 .folder-btn:hover {
   background-color: #facc15;
+}/* Styles the Back to Folders button */
+#backToFoldersBtn {
+  background-color: #e2e8f0;
+  border: 1px solid #94a3b8;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+#backToFoldersBtn:hover {
+  background-color: #cbd5e1;
 }
