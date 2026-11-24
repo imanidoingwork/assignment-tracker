@@ -55,4 +55,34 @@
 
     <!-- Displays the name of the selected class (updated by JavaScript) -->
     <h2 id="selectedClassTitle">Class Name</h2>
-  </div>
+  </div><!-- Form to add a new assignment inside the open class folder -->
+    <form id="assignmentForm">
+      <!-- Input for the assignment name -->
+      <input type="text" id="assignmentName" placeholder="Assignment Name" required>
+
+      <!-- Input for the due date -->
+      <input type="date" id="assignmentDueDate" required>
+
+      <!-- Input for what needs to be done -->
+      <textarea id="assignmentNotes" placeholder="What do you need to do for it?" rows="3" required></textarea>
+
+      <!-- Button to save the assignment -->
+      <button type="submit" id="addAssignmentBtn">Add Assignment</button>
+    </form>
+
+    <!-- Area where the sorted assignments for this class will be displayed -->
+    <div id="assignmentList"></div><!-- Form to add a new custom class folder -->
+    <form id="addClassForm">
+      <input type="text" id="newClassName" placeholder="New class name (e.g., Art)" required>
+      <button type="submit" id="addClassBtn">Add Class</button>
+    </form>
+
+    <!-- Grid of clickable class folders -->
+    <div id="folderGrid" class="folder-grid">
+      <button class="folder-btn" data-subject="Math">Math</button>
+      <button class="folder-btn" data-subject="ELA">ELA</button>
+      <button class="folder-btn" data-subject="Science">Science</button>
+      <button class="folder-btn" data-subject="Spanish">Spanish</button>
+      <button class="folder-btn" data-subject="History">History</button>
+      <button class="folder-btn" data-subject="PE">PE</button>
+    </div>

@@ -72,4 +72,80 @@ button {
 
 #backToFoldersBtn:hover {
   background-color: #cbd5e1;
+}/* Arranges the assignment form inputs vertically */
+#assignmentForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+/* Styles text boxes, date picker, and notes area */
+#assignmentForm input,
+#assignmentForm textarea {
+  padding: 10px;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+/* Styles the Add Assignment button */
+#addAssignmentBtn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+#addAssignmentBtn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Styles each individual assignment card in the list */
+.assignment-card {
+  text-align: left;
+  background-color: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-left: 5px solid #2563eb;
+  border-radius: 6px;
+  padding: 12px 15px;
+  margin-bottom: 12px;
+}
+
+.assignment-card h3 {
+  margin: 0 0 5px 0;
+}
+
+.assignment-due {
+  font-size: 14px;
+  font-weight: bold;
+  color: #dc2626;
+  margin: 0 0 8px 0;
+}/* Styles the form for adding a new class folder */
+#addClassForm {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+#addClassForm input {
+  flex: 1;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+#addClassBtn {
+  background-color: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+#addClassBtn:hover {
+  background-color: #15803d;
 }
